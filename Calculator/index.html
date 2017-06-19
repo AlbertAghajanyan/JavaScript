@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javascript/calculator.js"></script>
+</head>
+<body>
+<div id="calculator">
+    <table>
+        <td>
+            <input id="input" type="text" name="input" size="20" class="display">
+        </td>
+        <tr>
+            <td class="buttons">
+                <input type="button" name="log" value="log" OnClick="operators('log')">
+                <input type="button" name="pow" value="pow" OnClick="operators('pow')">
+                <input type="button" name="pow" value="sqrt" OnClick="operators('sqrt')">
+                <input type="button" name="pow" value="mod" OnClick="operators('modul')">
+                <input type="button" name="clear" value="c" OnClick="input_c()">
+                <br>
+                <input type="button" name="one" value="1" OnClick="input_text('1')">
+                <input type="button" name="two" value="2" OnClick="input_text('2')">
+                <input type="button" name="three" value="3" OnClick="input_text('3')">
+                <input type="button" name="add" value="+" OnClick="operators('+')">
+                <br>
+                <input type="button" name="four" value="4" OnClick="input_text('4')">
+                <input type="button" name="five" value="5" OnClick="input_text('5')">
+                <input type="button" name="six" value="6" OnClick="input_text('6')">
+                <input type="button" name="sub" value="-" OnClick="operators('-')">
+                <br>
+                <input type="button" name="seven" value="7" OnClick="input_text('7')">
+                <input type="button" name="eight" value="8" OnClick="input_text('8')">
+                <input type="button" name="nine" value="9" OnClick="input_text('9')">
+                <input type="button" name="mul" value="*" OnClick="operators('*')">
+                <br>
+                <input type="button" name="ket" value="." OnClick="input_text('.')">
+                <input type="button" name="zero" value="0" OnClick="input_text('0')">
+                <input type="button" name="doit" value="=" OnClick="equal()">
+                <input type="button" name="div"  value="/" OnClick="operators('/')">
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
