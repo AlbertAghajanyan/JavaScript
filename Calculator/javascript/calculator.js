@@ -45,6 +45,10 @@ function equal() {
             result=first*first;
             break;
         case "sqrt":
+            if (first < 0) {
+                alert("Error.Negative number!")
+                break;
+            }
             result=Math.sqrt(first);
             break;
         case "modul":
