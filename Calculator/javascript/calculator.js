@@ -9,7 +9,7 @@ var second=0;
 var operator="";
 
 function operators(oper) {
-    if (Number(document.getElementById('input').value) !== 0) {
+    if (Number(document.getElementById('input').value) != 0) {
         first = Number(document.getElementById('input').value);
     }
     /*first = Number(document.getElementById('input').value);*/
