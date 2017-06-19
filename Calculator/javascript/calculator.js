@@ -7,14 +7,18 @@ function input_c() {
 var first=0;
 var second=0;
 var operator="";
+var index=0;
 
 function operators(oper) {
-    if (Number(document.getElementById('input').value) != 0) {
+    if (index === 0) {
         first = Number(document.getElementById('input').value);
     }
-    /*first = Number(document.getElementById('input').value);*/
+    /*if (Number(document.getElementById('input').value) != 0) {
+        first = Number(document.getElementById('input').value);
+    }*/
     operator=oper;
     document.getElementById('input').value = "";
+    index+=1;
 }
 
 function equal() {
@@ -46,7 +50,7 @@ function equal() {
             break;
         case "sqrt":
             if (first < 0) {
-                alert("Error.Negative number!")
+                alert("Negative number!");
                 break;
             }
             result=Math.sqrt(first);
@@ -59,4 +63,5 @@ function equal() {
             break;
     }
     document.getElementById('input').value = result;
+    index=0;
 }
